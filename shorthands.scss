@@ -1,0 +1,40 @@
+
+// make the text won't overflow its container
+%text-overflow {
+	overflow : hidden;
+	text-overflow : ellipsis;
+	white-space : nowrap;
+}
+
+// Center block
+%center-block {
+	margin-left:auto;
+	margin-right: auto;
+}
+
+
+// Capital first Letter
+%&:first-child:first-letter {
+	font-size: 160px;
+	float: left;
+	margin: 20px 0px 25px 0;
+	line-height: 0.4;
+	color: green;
+}
+
+// Clear floating elements
+.clearfix {
+	&:before,
+	&:after {
+	display: table;
+	content : "";
+	}
+	&:after {
+	clear : both;
+	}
+}
+
+.hidden { 
+	display: none !important; 
+	visibility: hidden; 
+}

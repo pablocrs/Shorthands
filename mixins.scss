@@ -1,0 +1,21 @@
+/*
+ * Image Frame: 
+   @include image-frame($radius: 5px, $padding:5px, $bg:#fff)
+ * Ejemplo: 
+ 
+ img {
+	@include image-frame(15px, 5px, red);
+ }
+ 
+ */
+
+@mixin image-frame($radius: 5px, $padding:5px, $bg:#fff) {
+	display: inline-block;
+	margin: 0 auto;
+	background: $bg;
+	padding: $padding;
+	text-align: center;
+	border: 1px solid darken($bg, 20);
+	border-radius: $radius;
+}
+
