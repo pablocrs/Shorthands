@@ -19,3 +19,11 @@
 	border-radius: $radius;
 }
 
+@mixin stripped($background:black,$color:white){
+	>.row:nth-child(even){
+		background:$background;
+		color:$color;
+	}
+}
+
+
